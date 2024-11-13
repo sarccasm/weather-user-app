@@ -1,0 +1,14 @@
+<div class="user-card">
+  <img [src]="user.picture.large" alt="User Picture">
+  <h2>{{ user.name.first }} {{ user.name.last }}</h2>
+  <p>Стать: {{ user.gender }}</p>
+  <p>Місце розташування: {{ user.location.city }}, {{ user.location.country }}</p>
+  <p>Email: {{ user.email }}</p>
+
+  <div class="weather-section">
+    <h3>Погода:</h3>
+    <p>Стан: {{ weather.weather_code }}</p>
+    <p>Температура: {{ weather.temperature }}°C</p>
+    <p>Максимум: {{ highTemp }}°C, Мінімум: {{ lowTemp }}°C</p>
+  </div>
+</div>
